@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-  
 <head>
-  <link rel='stylesheet' href="product-landing-page-stylesheet.css">
+  <link rel="stylesheet" href="product-landing-page-stylesheet.css">
 </head>
 
 <body>
@@ -11,40 +10,43 @@
     <img class = 'logo' src="https://static.vecteezy.com/system/resources/previews/001/207/401/original/drum-logo-png.png" alt="small black and white drum logo">
     
     <div class='product-name' id="product-name">Skinny drums</div>
-    </div>
+      </div>
     <div class='page-links-container' id='page-links'>
-      <div class='page-link' id='who-we-are'>Who we are</div>
-      <div class='page-link' id='what-we-do'>What we do</div>
-      <div class='page-link' id='what-you-get'>What you get</div>
+      <div class='page-link' id='who-we-are'><a href name="#description">Who we are</a></div>
+      <div class='page-link' id='what-we-do'><a href name="#drum-demo">What we do</a></div>
+      <div class='page-link' id='what-you-get'><a href="#pricing-options">What you get</a></div>
     </div>
-
   </div>
-  
+
+
+   <div class='main' id='main'>
   <form>
-  <div class='main' id='main'>
-    <h1>Quality drums. Now that's something to bang about.</h1>
+ 
+    <h1 id="title">Quality drums. Now that's something to bang about.</h1>
     <div class='newsletter-subscribe' id='email-field'>
       Sign up to our newsletter to receive a <b>FREE</b> guide on how to pick a new drum set!<br>
       <input type="email" class='email-field' id='email-field' placeholder='Enter your email here'></input><br>
     <button type="submit" class='subscribe-button' id='signup'> Yes, send me my free guide!
     </div>
     </form>
-    <div class = 'product-description' id='product-description'>
-      <div class='thumbnail' id="thumbnail1"><img class="thumbnail-pic" src="https://image.flaticon.com/icons/png/512/120/120938.png" alt="leather"> </div>
+    
+    <div class = 'product-description' id='product-description' name='description'>
+      <div class='thumbnail' id="thumbnail1" name="drum-demo"><img class="thumbnail-pic" src="https://image.flaticon.com/icons/png/512/120/120938.png" alt="leather"> </div>
       <div class='property' id='property1'><h4>Carefully selected skins</h4><br>All our skins are hand-selected by our team of experts for optimal sound quality.</div>
       <div class="thumbnail"id="thumbnail3"><img src="https://image.flaticon.com/icons/png/512/120/120869.png" alt="exchange" class="thumbnail-pic"></div>
       <div class='property'id='property3'><h4>Free exchange and returns</h4><br>Not satisfied by the quality of your set? Let us know and we'll arrange areplacement free of charge within 48 hours</div>
       <div class='thumbnail'id="thumbnail2"><img src="https://image.flaticon.com/icons/png/512/113/113209.png" alt='drum' class='thumbnail-pic'></div>
       <div class="property" id='property2'><h4>Heavy-duty frames</h4><br>Because a drum kit is meant to be on the road, not in your room. Our engineered frames are custom-built to last you a <em>long</em> time. </div>
-           
-    
     </div>
     
     <div class="video-demo" id='video-demo'>
-      <iframe width=600px height=400px src='https://youtu.be/5ZlbXVvSJ8I'></iframe></div>
+    <object data="http://www.youtube.com/embed/5ZlbXVvSJ8I"
+   width="560" height="315"></object>
+    </div>
+ 
+
     
-    
-    <div class="pricing">
+    <div class="pricing" id="pricing-options" name='pricing-options'>
     <div class="option">
       <h3>The learner kit</h3><br>
       Basic 5 piece kit, good for fresh to seasonned beginners, anyone looking for a quality set of skins and frames at the start of their drumming career
@@ -59,9 +61,11 @@
     
     
     <div class='footer' id='footer'>
-      All rights reserved
+      <div class='footer-content' id='footer-content'>
+      All rights reserved<br>Property of Skinny drums ltd.<br>Webpage by double-dash-dino
+      </div>
+      
     </div>
   </div>
 </body>
-
 </html>
