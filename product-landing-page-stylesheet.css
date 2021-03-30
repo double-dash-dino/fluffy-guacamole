@@ -1,3 +1,5 @@
+
+
 .header{
     position:fixed;
     top:0;
@@ -7,6 +9,12 @@
     display:flex;
     justify-content:space-between;
     font-family:arial;
+  }
+  
+  @media (max-width:350px) {
+    .header{
+      position:static;
+    }
   }
   
   .logo{
@@ -27,25 +35,27 @@
     font-weight:bold;
   }
   
-  .page-links-container{
+  .nav-bar{
     display:flex;
     padding-right:10px;
   }
   
-  .page-link{
-    padding:20px;
+  .nav-link-element{
+    padding:0px 10px 0px 10px;
     margin:5px;
     font-weight:bold;
+    list-style-type: none;
+    
   /*   background-color:#f5a142; */
+  }
+  .nav-link{
+    
   }
   
   .main{
     left:0;
     top:0;
     width:100%;
-    margin-left:0px;
-    left-margin:0px;
-    padding-left:0px;
     font-family:arial;
     padding-top:70px;
     text-align:center;
@@ -132,7 +142,7 @@
   
   
   .footer{
-    margin-top:75px;
+    top-margin:75px;
     background-color:#ff9100;
     width:75%;
    margin:auto;
