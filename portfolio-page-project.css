@@ -121,10 +121,10 @@ h2{
   }
   
   .legalese{
-  /*   position:absolute; */
     float:right;
     padding-right:25px;
     text-decoration:inherit;
+    text-align: right;
   }
   
   #legalese-link{
