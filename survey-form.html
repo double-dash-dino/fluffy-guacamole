@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey form assignment</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="survey-form-stylesheet.css">
+    </head>
+    <body>
+<body>
+<div class = "container">
+  
+  <div class="header">
+    <h1 id="title"> Six nations rugby tournament survey </h1>
+    <p id="description"> We'd like to know a little bit about your experience following the tournament.
+    </p>
+       </div>
+
+    
+    <div class="side-left">
+      
+    </div>
+    <div class="content-middle">
+    <div class="form">
+      <h3> Please answer the following questions</h3>
+      <form id="survey-form">
+        <p>
+          <label id='name-label'>What's your name?</label><br>
+          <input class="name-question" type="text" id="name" placeholder=" Name" required></p>
+        <p>Where are you from?<br>
+      <input class="nationality-question" type="text" placeholder=" France, Germany, Mars..."></p>
+        <p>What team do you support?<br>
+        <div class=team-support>
+
+        <input class="team-support" type="radio" id="france" name="team-support" value="france"><label for="France">France</label><br>
+        <input class="team-support" type="radio" id="england" name="team-support" value="england"><label for="england"> England</label><br>
+        <input class="team-support" type="radio" id="wales" name="team-support" value="wales"><label for="wales"> Wales</label><br>
+        <input class="team-support" type="radio" id="ireland" name="team-support" value="ireland"><label for="ireland"> Ireland </label><br>
+        <input class="team-support" type="radio" id="scotland" value="scotland" name="team-support"><label for="scotland"> Scotland</label><br>
+        <input class="team-support" type="radio" id="italy" name="team-support" value="italy"><label for="italy"> Italy</label>
+        </div>
+        <br><br>
+        
+        <label for='team-win'>Do you think your team will win?</label><br>
+        <select id='dropdown' name='team-win'>
+          <option value="yes-win"> Yes </option>
+          <option value ="no-win"> No </option>
+          <option value = "unsure"> Not sure </option>
+          
+        </select>
+          
+          </p>
+        <label id='number-label'>
+          How many games do you think your team will win? 
+        </label><br>
+          
+            <input id="number" class="games-win" type="number" required value=0 min=0 max=5 placeholder='0'>
+      
+      <p> How do you typically watch the games? <br>
+        <input type='checkbox' value='at-a-pub' id='watch-option1' name='watch-option1'>At a pub</input><br>
+      <input type='checkbox' id='watch-option2' name='watch-option2' value='at-home'>At home</input><br>
+  <input type='checkbox' id='watch-option3' name='watch-option3' value='with-friends'>With friends</input>
+      </p>
+<p> Do you want to tell us more about your viewing habits? Please write down details below:<br>
+  <textarea id='additional-details' name='additional-details' placeholder="e.g. I play for one of the teams so can't watch the games, etc."></textarea>
+      
+    
+      <p>
+        <label id='email-label'>Lastly, please write down your email</label><br>
+      <input type="email" class="email-question" id="email" required placeholder="your@email.com" pattern="[a-z0-9._-+]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </p>
+        <button type="submit"  id="submit" class = "submit-button"> Submit! </button>
+      
+      </div>
+        
+        
+        
+        
+             
+             
+             </form> 
+      </div>
+  </div>
+    <div class="side-right">
+      
+    
+  </div>
+  <div class="footer">
+    Footer
+  </div>
+  
+  </div>
+  
+</body>
+    </body>
+</html>
