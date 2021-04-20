@@ -41,6 +41,11 @@ h2{
     border-bottom:0px;
     border-top:0px;
   }
+
+  .nav-link:hover{
+    color: #3467eb ;
+    background-color: white;
+  }
   
   .welcome-section{
     background-color:#614385;
