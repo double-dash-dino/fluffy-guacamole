@@ -77,7 +77,6 @@ h2{
   .project-snippet{
     width:300px;
     height:auto;
-  /*   border-style:solid; */
   }
   .link-to-project{
     color:black;
@@ -124,6 +123,7 @@ h2{
     height:60px;
     width:auto;
   }
+
   
   .legalese{
     float:right;
