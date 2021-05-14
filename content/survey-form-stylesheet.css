@@ -1,99 +1,90 @@
-body{
-    background-image:url("https://images.unsplash.com/photo-1529478562208-d4c746edcb79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family:Georgia;
-  }
-  
-  .container{
-    text-align:center;
-    display:grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 20% 60% 20%;
-    grid-gap: 20px;
-    opacity:90%;
-    line-height:25px;
-    
-  }
-  
-  .header{
-    grid-area: 1/1/2/4;
-    background-color: green;
-    border-radius: 0px 0px 20px 20px;
-    
-  }
-  
-  
-  .side-left{
-    grid-area: 2/1/3/2;
-    background-color:green;
-    border-radius:15px
-  }
-  
-  .content-middle{
-    grid-area: 2/2/3/3;
-    background-color: green;
-    padding-bottom: 30px;
-    border-radius: 15px;
-    
-  }
-  
-  .side-right{
-    grid-area: 2/3/3/4;
-    background-color:green;
-    border-radius: 15px;
-  }
-  
-  .footer{
-    grid-area: 3/1/4/4;
-    background-color: green;
-    border-radius: 20px 20px 0px 0px;
-  }
-  
-  .nationality-question{
+body {
+  background-image: url("https://images.unsplash.com/photo-1529478562208-d4c746edcb79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Georgia;
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 20% 60% 20%;
+  grid-gap: 20px;
+  opacity: 90%;
+  line-height: 25px;
+}
+
+.header {
+  grid-area: 1/1/2/4;
+  background-color: green;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.side-left {
+  grid-area: 2/1/3/2;
+  background-color: green;
+  border-radius: 15px;
+}
+
+.content-middle {
+  grid-area: 2/2/3/3;
+  background-color: green;
+  padding-bottom: 30px;
+  border-radius: 15px;
+}
+
+.side-right {
+  grid-area: 2/3/3/4;
+  background-color: green;
+  border-radius: 15px;
+}
+
+.footer {
+  grid-area: 3/1/4/4;
+  background-color: green;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.nationality-question {
   /*   size: auto; */
-    border-color: black;
-    height:2em;
-    width: 20%;
-  }
-  
-  .name-question{
+  border-color: black;
+  height: 2em;
+  width: 20%;
+}
+
+.name-question {
   /*   size: auto; */
-    border-color: black;
-    height:2em;
-    width: 20%;
-  }
-  
-  .team-support{
-    text-align: left;
-    margin-left:25%;
-  }
-  
-  .submit-button{
-    height:5em;
-    width:10em;
-    border-radius:15px;
-    background-color: #6bff89;
-    border-color:#6bff89;
-  }
-  
-  .win-question{
+  border-color: black;
+  height: 2em;
+  width: 20%;
+}
+
+.team-support {
+  text-align: left;
+  margin-left: 25%;
+}
+
+.submit-button {
+  height: 5em;
+  width: 10em;
+  border-radius: 15px;
+  background-color: #6bff89;
+  border-color: #6bff89;
+}
+
+.win-question {
   /*   size: auto; */
-    border-color: black;
-    height:2em;
-    width: 20%;
-  }
-  
-  .games-win{
-    width:4em;
-  }
-  
-  #additional-details{
-    height:4.5em;
-  }
-  
-  
-  
-  
-  
+  border-color: black;
+  height: 2em;
+  width: 20%;
+}
+
+.games-win {
+  width: 4em;
+}
+
+#additional-details {
+  height: 4.5em;
+}
