@@ -1,19 +1,19 @@
-body{
-    display:flex;
+body {
+  display: flex;
+}
+
+.navigation-bar {
+  padding: 20px;
+}
+
+.section-header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .section-header {
+    font-size: 0.5em;
+    font-weight: normal;
   }
-  
-  .navigation-bar{
-    padding:20px;
-  }
-  
-  .section-header{
-    font-size:1.5em;
-    font-weight:bold;
-  }
-  
-  @media (max-width:400px){
-    .section-header{
-      font-size:0.5em;
-      font-weight:normal;
-    }
-  }
+}
