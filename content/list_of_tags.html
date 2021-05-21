@@ -1,47 +1,35 @@
-ALL TAGS CAN BE FOUND ON W3SCHOOLS.COM
-
-
-
------------
-|STRUCTURE|
------------
-
+ALL TAGS CAN BE FOUND ON W3SCHOOLS.COM ----------- |STRUCTURE| -----------
 Boilerplate:
 <!-- Template for html doc -->
 <!-- Can be generated with !+enter or !+tab -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body></body>
 </html>
 
 Comment:
 <!-- THIS IS A COMMENT-->
 
 Head:
-<Head>This is my head</Head>
+<head>
+  This is my head
+</head>
 
 Body:
-<body>This is my body</body>
+<body>
+  This is my body
+</body>
 
-
-
--------------------------------------
-|HEADINGS, PARAGRAPHS AND TYPOGRAPHY|
--------------------------------------
-
-
-Headings:
+------------------------------------- |HEADINGS, PARAGRAPHS AND TYPOGRAPHY|
+------------------------------------- Headings:
 <!-- Fromd 1 (largest) to 6 (smallest) -->
 <h1>I am heading 1</h1>
-
 
 Paragraphs:
 <p>I am a paragraph</p>
@@ -50,26 +38,12 @@ Line break:
 <!-- No need to add </br> as <br> is one object -->
 <!-- Can add a number of <br> to add multiple line breaks -->
 Line break after this
-<br>
-Line break before this
-
-Line break with physical line:
-Line after this
-<hr>
-Line before this
-
-
-
-
-Lorem ipsum:
+<br />
+Line break before this Line break with physical line: Line after this
+<hr />
+Line before this Lorem ipsum:
 <!-- Add a number next to lorem to specify the desired length (in words) -->
-lorem15
-
-
-
-Typography:
-
-Bold:
+lorem15 Typography: Bold:
 <strong>I am bold text</strong>
 
 Italics:
@@ -80,44 +54,26 @@ Strikethrough:
 <!-- Deleted text -->
 <del>I am strikethrough</del>
 
+---------- |META TAGS| ---------- Set of characters:
+<meta charset="UTF-8" />
 
-
-----------
-|META TAGS|
-----------
-
-Set of characters:
-<meta charset="UTF-8">
-
-Responsiveness: 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Responsiveness:
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 Browser compatibility:
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-
-
-Search engine meta tags:
-
-
-Description:
-<meta name="Description" content="This is my website description">
+Search engine meta tags: Description:
+<meta name="Description" content="This is my website description" />
 
 Keywords:
 <!-- Usually 8 to 12 keywords, separated my a comma -->
-<meta name="keywords" content="web, web development, etc">
+<meta name="keywords" content="web, web development, etc" />
 
 Do not show the page in browser:
-<meta name="robots" content="NOINDEX, NOFOLLOW">
+<meta name="robots" content="NOINDEX, NOFOLLOW" />
 
-
-
-
--------
-|LINKS|
--------
-
-Add hyperlink:
+------- |LINKS| ------- Add hyperlink:
 <a href="http://iAmTheLink.com"> I am the text of the link</a>
 
 Open link in a new tab:
@@ -126,88 +82,72 @@ Open link in a new tab:
 Add internal link:
 <a href="/nameOfFile"> I am the text of the internal link</a>
 
-
---------
-|IMAGES|
---------
-
-Add local image:
-<img src="/folder/file.jpg" alt="textThatShowsUpIfThereIsAProblem">
+-------- |IMAGES| -------- Add local image:
+<img src="/folder/file.jpg" alt="textThatShowsUpIfThereIsAProblem" />
 
 Add remote image:
-<img src="http://linkToTheImage" alt="textThatShowsUpIfThereIsAProblem">
+<img src="http://linkToTheImage" alt="textThatShowsUpIfThereIsAProblem" />
 
-
--------
-|LISTS|
--------
-
-
-Unordered list:
+------- |LISTS| ------- Unordered list:
 <!-- Adding the attribute <ul style=list-style: disc> will restyle the list. Same with square, disc, circle, none  -->
 <!-- To generate X <li> components, type li*X -->
- <ul>
-    <li>I am item 1</li>
-    <li>I am item 2</li>
-    <li>I am item 3</li>
+<ul>
+  <li>I am item 1</li>
+  <li>I am item 2</li>
+  <li>I am item 3</li>
 </ul>
 
 Ordered list:
 <!-- Adding the attribute <ol type=1> will change the type of list. Same with A, a, I, i -->
 
 <ol>
-        <li>I am item 1</li>
-        <li>I am item 2</li>
-        <li>I am item 3</li>
+  <li>I am item 1</li>
+  <li>I am item 2</li>
+  <li>I am item 3</li>
 </ol>
-
 
 Nested list:
 <ul>
-        <li>I am item 1
-            <ul>
-                <li>I am item 1.1</li>
-                <li>I am item 1.2</li>
-            </ul>
-        </li>
-        <li>I am item 2</li>
+  <li>
+    I am item 1
+    <ul>
+      <li>I am item 1.1</li>
+      <li>I am item 1.2</li>
+    </ul>
+  </li>
+  <li>I am item 2</li>
 </ul>
 
-
---------
-|TABLES|
---------
-
-Create table:
+-------- |TABLES| -------- Create table:
 <table>
-    <thead>
-        <!-- Table head -->
-        <tr>
-            <!-- Table row -->
-            <th>Table heading 1</th>
-            <th>Table heading 2</th>
-            <th>Table heading 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- Table body -->
-        <tr>
-            <!-- Table row -->
-            <th>Data A2</th>
-            <th>Data B2</th>
-            <th>Data C2</th>
-        </tr>
-        <tr>
-            <!-- Table row -->
-            <th>Data A3</th>
-            <th>Data B3</th>
-            <th>Data C3</th>
-            </tr>
-             <tr>
-            <!-- Table row -->
-            <th>Data A4</th>
-            <th>Data B4</th>
-            <th>Data C4</th>
-        </tr>
-    </tbody>
+  <thead>
+    <!-- Table head -->
+    <tr>
+      <!-- Table row -->
+      <th>Table heading 1</th>
+      <th>Table heading 2</th>
+      <th>Table heading 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Table body -->
+    <tr>
+      <!-- Table row -->
+      <th>Data A2</th>
+      <th>Data B2</th>
+      <th>Data C2</th>
+    </tr>
+    <tr>
+      <!-- Table row -->
+      <th>Data A3</th>
+      <th>Data B3</th>
+      <th>Data C3</th>
+    </tr>
+    <tr>
+      <!-- Table row -->
+      <th>Data A4</th>
+      <th>Data B4</th>
+      <th>Data C4</th>
+    </tr>
+  </tbody>
 </table>
