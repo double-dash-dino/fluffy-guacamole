@@ -1,0 +1,70 @@
+:root {
+  background: white;
+}
+
+.header {
+  border-style: hidden hidden solid hidden;
+}
+
+.footer {
+  border-style: solid hidden hidden hidden;
+}
+
+.header,
+.footer {
+  padding: 10px 100px 10px 100px;
+
+  border-color: #2d6c2d;
+
+  background: #45a545;
+  color: black;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20em;
+  width: 40em;
+  margin: 50px 50px 50px 50px;
+  border: 5px solid white;
+}
+
+.quote-field {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+.quote-author {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.sharing-quote {
+  display: flex;
+  justify-content: center;
+}
+
+.header-text,
+.footer-text {
+  font-weight: bold;
+  color: #ffb366;
+}
+
+#app {
+  color: #45a545;
+  background: #ffb366;
+  display: flex;
+  flex-direction: column;
+}
