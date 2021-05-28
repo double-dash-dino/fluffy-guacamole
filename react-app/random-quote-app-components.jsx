@@ -49,7 +49,9 @@ class QuoteBox extends React.Component {
             <h5>I am the quote author</h5>
           </div>
           <div className="refresh-wrapper">
-            <button className="refresh-button">I am the refresh button</button>
+            <button className="refresh-button">
+              <p>I am the refresh button</p>
+            </button>
           </div>
           <div className="sharing-quote">
             <h5>I am sharing buttons</h5>
