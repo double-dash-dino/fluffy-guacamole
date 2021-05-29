@@ -50,10 +50,16 @@
   justify-content: flex-end;
   padding-right: 30px;
 }
+.refresh-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
 
 .sharing-quote {
   display: flex;
   justify-content: center;
+  padding-bottom: 2em;
 }
 
 .header-text,
