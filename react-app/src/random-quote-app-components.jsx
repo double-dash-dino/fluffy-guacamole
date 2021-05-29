@@ -10,7 +10,7 @@ class Application extends Component {
   }
   render() {
     return (
-      <div>
+      <div id="app">
         <Header />
         <QuoteBox />
         <Footer />
