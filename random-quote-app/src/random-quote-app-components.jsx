@@ -1,14 +1,21 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-// import "quotes" from "quotes.json";
-// import * as React from "https://cdn.skypack.dev/react@17.0.1";
-// fetch { quotes }  from "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json";
+import quotes from "./quotes";
 
 function refreshPage() {
   window.location.reload();
 }
+const listOfQuotesAndAuthors = quotes.quotes;
+const listOfQuotes = [];
+const listOfAuthors = [];
 
-const listOfQuote = quotes.map((quote) => <li>(quote)</li>);
+for (var i = 0; i < quotes.quotes.length; i++) {
+  listOfQuotes.push(listOfQuotesAndAuthors[i].quote);
+  listOfAuthors.push(listOfQuotesAndAuthors[i].author);
+}
+
+const randomNumber = Math.random() * 102;
+const quoteNumber = Math.floor(randomNumber);
 
 class Application extends Component {
   constructor(props) {
@@ -19,9 +26,7 @@ class Application extends Component {
     return (
       <div id="app">
         <Header />
-        <div id="test">
-          <ul>{listOfQuote}</ul>
-        </div>
+        {console.log(quoteNumber)}
         <QuoteBox />
         <Footer />
       </div>
@@ -58,10 +63,10 @@ class QuoteBox extends Component {
       <div className="main-page">
         <div className="quote-wrapper">
           <div className="quote-field">
-            <h1>I am the quote</h1>
+            <h1>{listOfQuotes[quoteNumber]}</h1>
           </div>
           <div className="quote-author">
-            <h5>I am the quote author</h5>
+            <h5>{listOfAuthors[quoteNumber]}</h5>
           </div>
           <div className="refresh-wrapper">
             <button className="refresh-button" onClick={refreshPage}>
