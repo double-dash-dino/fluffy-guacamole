@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import Application from "./random-quote-app-components.jsx";
 import "./random-quote-app-stylesheet.css";
 import reportWebVitals from "./reportWebVitals";
+import "./quotes.json";
 
 ReactDOM.render(
   <React.StrictMode>
