@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+// import "quotes" from "quotes.json";
 // import * as React from "https://cdn.skypack.dev/react@17.0.1";
 // fetch { quotes }  from "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json";
 
 function refreshPage() {
   window.location.reload();
 }
+
+const listOfQuote = quotes.map((quote) => <li>(quote)</li>);
 
 class Application extends Component {
   constructor(props) {
@@ -16,6 +19,9 @@ class Application extends Component {
     return (
       <div id="app">
         <Header />
+        <div id="test">
+          <ul>{listOfQuote}</ul>
+        </div>
         <QuoteBox />
         <Footer />
       </div>
