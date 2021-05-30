@@ -3,6 +3,10 @@ import ReactDOM from "react-dom";
 // import * as React from "https://cdn.skypack.dev/react@17.0.1";
 // fetch { quotes }  from "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json";
 
+function refreshPage() {
+  window.location.reload();
+}
+
 class Application extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +43,10 @@ class QuoteBox extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+
+    // this.refreshPage = this.refreshPage.bind(this);
   }
+
   render() {
     return (
       <div className="main-page">
@@ -51,7 +58,7 @@ class QuoteBox extends Component {
             <h5>I am the quote author</h5>
           </div>
           <div className="refresh-wrapper">
-            <button className="refresh-button">
+            <button className="refresh-button" onClick={refreshPage}>
               <p>I am the refresh button</p>
             </button>
           </div>
