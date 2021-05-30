@@ -1,14 +1,20 @@
-import * as React from "https://cdn.skypack.dev/react@17.0.1";
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+// import * as React from "https://cdn.skypack.dev/react@17.0.1";
 // fetch { quotes }  from "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json";
 
-class App extends React.Component {
+function refreshPage() {
+  window.location.reload();
+}
+
+class Application extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   render() {
     return (
-      <div>
+      <div id="app">
         <Header />
         <QuoteBox />
         <Footer />
@@ -17,7 +23,7 @@ class App extends React.Component {
   }
 }
 
-class Header extends React.Component {
+class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -33,11 +39,14 @@ class Header extends React.Component {
   }
 }
 
-class QuoteBox extends React.Component {
+class QuoteBox extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+
+    // this.refreshPage = this.refreshPage.bind(this);
   }
+
   render() {
     return (
       <div className="main-page">
@@ -49,7 +58,9 @@ class QuoteBox extends React.Component {
             <h5>I am the quote author</h5>
           </div>
           <div className="refresh-wrapper">
-            <button className="refresh-button">I am the refresh button</button>
+            <button className="refresh-button" onClick={refreshPage}>
+              <p>I am the refresh button</p>
+            </button>
           </div>
           <div className="sharing-quote">
             <h5>I am sharing buttons</h5>
@@ -60,7 +71,7 @@ class QuoteBox extends React.Component {
   }
 }
 
-class Footer extends React.Component {
+class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -76,4 +87,6 @@ class Footer extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<Application />, document.getElementById("root"));
+
+export default Application;
