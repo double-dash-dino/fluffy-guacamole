@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import quotes from "./quotes";
+import { quotes, colours } from "./random-quote-app-data.json";
 
 function refreshPage() {
   window.location.reload();
