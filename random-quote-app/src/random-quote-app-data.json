@@ -1,14 +1,6 @@
 {
-  "colours": [
-    "000000",
-    1111111,
-    2222222,
-    3333333,
-    4444444,
-    5555555,
-    6666666
-  ]
-  
+  "colours": ["000000", "1111111", "2222222", "3333333"],
+
   "quotes": [
     {
       "quote": "Life isn’t about getting and having, it’s about giving and being.",
