@@ -26,8 +26,8 @@ class Application extends Component {
   }
   render() {
     return (
-      <div id="app">
-        <Header style={{ color: "blue" }} />
+      <div id="app" style={{ backgroundColor: randomColour }}>
+        <Header />
         {console.log(colourNumber, randomColour)}
         <QuoteBox
           style={{ backgroundColor: randomColour, color: randomColour }}
@@ -45,7 +45,10 @@ class Header extends Component {
   }
   render() {
     return (
-      <div className="header">
+      <div
+        className="header"
+        style={{ backgroundColor: "white", color: randomColour }}
+      >
         <p className="header-text">I go left of header</p>
         <h3>I am a header</h3>
         <p className="header-text">I go right of header</p>
@@ -64,8 +67,11 @@ class QuoteBox extends Component {
 
   render() {
     return (
-      <div className="main-page">
-        <div className="quote-wrapper">
+      <div className="main-page" style={{ color: randomColour }}>
+        <div
+          className="quote-wrapper"
+          style={{ backgroundColor: "white", color: randomColour }}
+        >
           <div className="quote-field">
             <h1>{listOfQuotes[quoteNumber]}</h1>
           </div>
@@ -94,7 +100,10 @@ class Footer extends Component {
 
   render() {
     return (
-      <div className="footer">
+      <div
+        className="footer"
+        style={{ backgroundColor: "white", color: randomColour }}
+      >
         <p className="footer-text"> I go left of footer</p>
         <p className="footer-text"> I go right of footer</p>
       </div>
