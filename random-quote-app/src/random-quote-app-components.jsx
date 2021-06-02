@@ -14,8 +14,9 @@ for (var i = 0; i < quotes.length; i++) {
   listOfAuthors.push(listOfQuotesAndAuthors[i].author);
 }
 
-const randomNumber = Math.random() * 102;
-const quoteNumber = Math.floor(randomNumber);
+const randomNumber = Math.random();
+const colourNumber = Math.floor(randomNumber * 4);
+const quoteNumber = Math.floor(randomNumber * 102);
 
 class Application extends Component {
   constructor(props) {
