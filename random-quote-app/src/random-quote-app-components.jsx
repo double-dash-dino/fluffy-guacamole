@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import quotes from "./quotes";
+import { quotes, colours } from "./random-quote-app-data.json";
 
 function refreshPage() {
   window.location.reload();
 }
-const listOfQuotesAndAuthors = quotes.quotes;
+const listOfQuotesAndAuthors = quotes;
 const listOfQuotes = [];
 const listOfAuthors = [];
 
-for (var i = 0; i < quotes.quotes.length; i++) {
+for (var i = 0; i < quotes.length; i++) {
   listOfQuotes.push(listOfQuotesAndAuthors[i].quote);
   listOfAuthors.push(listOfQuotesAndAuthors[i].author);
 }
