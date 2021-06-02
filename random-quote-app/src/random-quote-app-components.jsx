@@ -15,9 +15,10 @@ for (var i = 0; i < quotes.length; i++) {
 }
 
 const randomNumber = Math.random();
-const colourNumber = Math.floor(randomNumber * 10);
+const colourNumber = Math.floor(randomNumber * 14);
 const quoteNumber = Math.floor(randomNumber * 102);
-const randomColour = colours[colourNumber];
+const randomColour = colours[colourNumber]["main-colour"];
+const randomColourDarker = colours[colourNumber]["border-colour"];
 
 class Application extends Component {
   constructor(props) {
@@ -47,7 +48,11 @@ class Header extends Component {
     return (
       <div
         className="header"
-        style={{ backgroundColor: "white", color: randomColour }}
+        style={{
+          backgroundColor: "white",
+          color: randomColour,
+          borderColor: randomColourDarker,
+        }}
       >
         <p className="header-text">I go left of header</p>
         <h3>I am a header</h3>
@@ -83,7 +88,7 @@ class QuoteBox extends Component {
               className="refresh-button"
               onClick={refreshPage}
               style={{
-                backgroundColor: randomColour,
+                backgroundColor: randomColourDarker,
                 border: "none",
                 color: "white",
               }}
@@ -110,7 +115,11 @@ class Footer extends Component {
     return (
       <div
         className="footer"
-        style={{ backgroundColor: "white", color: randomColour }}
+        style={{
+          backgroundColor: "white",
+          color: randomColour,
+          borderColor: randomColourDarker,
+        }}
       >
         <p className="footer-text"> I go left of footer</p>
         <p className="footer-text"> I go right of footer</p>

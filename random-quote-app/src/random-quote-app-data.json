@@ -1,19 +1,62 @@
 {
   "colours": [
-    "#e6b0aa",
-    "#f1948a",
-    "#c39bd3",
-    "#bb8fce",
-    "#7fb3d5",
-    "#85c1e9",
-    "#76d7c4",
-    "#73c6b6",
-    "#7dcea0",
-    "#82e0aa",
-    "#f7dc6f",
-    "#f8c471",
-    "#f0b27a",
-    "#e59866"
+    {
+      "main-colour": "#e6b0aa",
+      "border-colour": "#a93226"
+    },
+    {
+      "main-colour": "#f1948a",
+      "border-colour": "#cb4335"
+    },
+    {
+      "main-colour": "#c39bd3",
+      "border-colour": "#884ea0"
+    },
+    {
+      "main-colour": "#bb8fce",
+      "border-colour": "#7d3c98"
+    },
+    {
+      "main-colour": "#7fb3d5",
+      "border-colour": "#2471a3"
+    },
+    {
+      "main-colour": "#85c1e9",
+      "border-colour": "#2e86c1"
+    },
+    {
+      "main-colour": "#76d7c4",
+      "border-colour": "#17a589"
+    },
+    {
+      "main-colour": "#73c6b6",
+      "border-colour": "#138d75"
+    },
+    {
+      "main-colour": "#7dcea0",
+      "border-colour": "#229954"
+    },
+    {
+      "main-colour": "#82e0aa",
+      "border-colour": "#28b463"
+    },
+
+    {
+      "main-colour": "#f7dc6f",
+      "border-colour": "#d4ac0d"
+    },
+    {
+      "main-colour": "#f8c471",
+      "border-colour": "#d68910"
+    },
+    {
+      "main-colour": "#f0b27a",
+      "border-colour": "#a04000"
+    },
+    {
+      "main-colour": "#e59866",
+      "border-colour": "#909497"
+    }
   ],
 
   "quotes": [
