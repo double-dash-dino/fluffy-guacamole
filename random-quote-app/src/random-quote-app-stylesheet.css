@@ -1,3 +1,8 @@
+:root {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .header {
   border-style: hidden hidden solid hidden;
 }
@@ -21,6 +26,7 @@
 }
 
 .quote-wrapper {
+  border-radius: 25px;
   display: flex;
   background-color: white;
   flex-direction: column;
@@ -49,6 +55,13 @@
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
+}
+
+.refresh-button {
+  font-size: 1.5em;
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
 .sharing-quote {

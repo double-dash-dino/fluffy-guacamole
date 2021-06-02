@@ -79,8 +79,16 @@ class QuoteBox extends Component {
             <h5>{listOfAuthors[quoteNumber]}</h5>
           </div>
           <div className="refresh-wrapper">
-            <button className="refresh-button" onClick={refreshPage}>
-              <p>I am the refresh button</p>
+            <button
+              className="refresh-button"
+              onClick={refreshPage}
+              style={{
+                backgroundColor: randomColour,
+                border: "none",
+                color: "white",
+              }}
+            >
+              New quote!
             </button>
           </div>
           <div className="sharing-quote">
