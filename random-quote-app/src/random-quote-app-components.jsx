@@ -15,8 +15,9 @@ for (var i = 0; i < quotes.length; i++) {
 }
 
 const randomNumber = Math.random();
-const colourNumber = Math.floor(randomNumber * 4);
+const colourNumber = Math.floor(randomNumber * 10);
 const quoteNumber = Math.floor(randomNumber * 102);
+const randomColour = colours[colourNumber];
 
 class Application extends Component {
   constructor(props) {
@@ -26,10 +27,12 @@ class Application extends Component {
   render() {
     return (
       <div id="app">
-        <Header />
-        {console.log(quoteNumber)}
-        <QuoteBox />
-        <Footer />
+        <Header style={{ color: "blue" }} />
+        {console.log(colourNumber, randomColour)}
+        <QuoteBox
+          style={{ backgroundColor: randomColour, color: randomColour }}
+        />
+        <Footer style={{ color: randomColour }} />
       </div>
     );
   }

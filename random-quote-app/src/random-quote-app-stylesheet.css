@@ -1,7 +1,3 @@
-:root {
-  background: white;
-}
-
 .header {
   border-style: hidden hidden solid hidden;
 }
@@ -13,12 +9,7 @@
 .header,
 .footer {
   padding: 10px 100px 10px 100px;
-
-  border-color: #2d6c2d;
-
-  background: #45a545;
   color: black;
-
   display: flex;
   justify-content: space-between;
 }
@@ -31,12 +22,12 @@
 
 .quote-wrapper {
   display: flex;
+  background-color: white;
   flex-direction: column;
   justify-content: center;
   height: auto;
   width: 40em;
   margin: 50px 50px 50px 50px;
-  border: 5px solid white;
 }
 
 .quote-field {
@@ -69,12 +60,9 @@
 .header-text,
 .footer-text {
   font-weight: bold;
-  color: #ffb366;
 }
 
 #app {
-  color: #45a545;
-  background: #ffb366;
   display: flex;
   flex-direction: column;
 }
