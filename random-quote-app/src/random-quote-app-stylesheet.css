@@ -1,5 +1,6 @@
 :root {
-  background: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -13,12 +14,7 @@
 .header,
 .footer {
   padding: 10px 100px 10px 100px;
-
-  border-color: #2d6c2d;
-
-  background: #45a545;
   color: black;
-
   display: flex;
   justify-content: space-between;
 }
@@ -30,13 +26,14 @@
 }
 
 .quote-wrapper {
+  border-radius: 25px;
   display: flex;
+  background-color: white;
   flex-direction: column;
   justify-content: center;
   height: auto;
   width: 40em;
   margin: 50px 50px 50px 50px;
-  border: 5px solid white;
 }
 
 .quote-field {
@@ -60,6 +57,13 @@
   padding-bottom: 30px;
 }
 
+.refresh-button {
+  font-size: 1.5em;
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
 .sharing-quote {
   display: flex;
   justify-content: center;
@@ -69,12 +73,9 @@
 .header-text,
 .footer-text {
   font-weight: bold;
-  color: #ffb366;
 }
 
 #app {
-  color: #45a545;
-  background: #ffb366;
   display: flex;
   flex-direction: column;
 }

@@ -15,8 +15,10 @@ for (var i = 0; i < quotes.length; i++) {
 }
 
 const randomNumber = Math.random();
-const colourNumber = Math.floor(randomNumber * 4);
+const colourNumber = Math.floor(randomNumber * 14);
 const quoteNumber = Math.floor(randomNumber * 102);
+const randomColour = colours[colourNumber]["main-colour"];
+const randomColourDarker = colours[colourNumber]["border-colour"];
 
 class Application extends Component {
   constructor(props) {
@@ -25,11 +27,13 @@ class Application extends Component {
   }
   render() {
     return (
-      <div id="app">
+      <div id="app" style={{ backgroundColor: randomColour }}>
         <Header />
-        {console.log(quoteNumber)}
-        <QuoteBox />
-        <Footer />
+        {console.log(colourNumber, randomColour)}
+        <QuoteBox
+          style={{ backgroundColor: randomColour, color: randomColour }}
+        />
+        <Footer style={{ color: randomColour }} />
       </div>
     );
   }
@@ -42,7 +46,14 @@ class Header extends Component {
   }
   render() {
     return (
-      <div className="header">
+      <div
+        className="header"
+        style={{
+          backgroundColor: "white",
+          color: randomColour,
+          borderColor: randomColourDarker,
+        }}
+      >
         <p className="header-text">I go left of header</p>
         <h3>I am a header</h3>
         <p className="header-text">I go right of header</p>
@@ -61,8 +72,11 @@ class QuoteBox extends Component {
 
   render() {
     return (
-      <div className="main-page">
-        <div className="quote-wrapper">
+      <div className="main-page" style={{ color: randomColour }}>
+        <div
+          className="quote-wrapper"
+          style={{ backgroundColor: "white", color: randomColour }}
+        >
           <div className="quote-field">
             <h1>{listOfQuotes[quoteNumber]}</h1>
           </div>
@@ -70,8 +84,16 @@ class QuoteBox extends Component {
             <h5>{listOfAuthors[quoteNumber]}</h5>
           </div>
           <div className="refresh-wrapper">
-            <button className="refresh-button" onClick={refreshPage}>
-              <p>I am the refresh button</p>
+            <button
+              className="refresh-button"
+              onClick={refreshPage}
+              style={{
+                backgroundColor: randomColourDarker,
+                border: "none",
+                color: "white",
+              }}
+            >
+              New quote!
             </button>
           </div>
           <div className="sharing-quote">
@@ -91,7 +113,14 @@ class Footer extends Component {
 
   render() {
     return (
-      <div className="footer">
+      <div
+        className="footer"
+        style={{
+          backgroundColor: "white",
+          color: randomColour,
+          borderColor: randomColourDarker,
+        }}
+      >
         <p className="footer-text"> I go left of footer</p>
         <p className="footer-text"> I go right of footer</p>
       </div>
